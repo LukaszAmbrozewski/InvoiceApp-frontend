@@ -1,23 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Routes } from "react-router-dom";
 import './App.css';
+import {Login} from "./views/Login/Login";
+import {ClientAdd} from "./views/ClientAdd/ClientAdd";
+import {ClientAdded} from "./views/ClientAdded/ClientAdded";
+import {ClientPatch} from "./views/ClientPatch/ClientPatch";
+import {ClientsList} from "./views/ClientsList/ClientsList";
+import {History} from "./views/History/History";
+import {InvoiceAdd} from "./views/InvoiceAdd/InvoiceAdd";
+import {InvoiceAddItem} from "./views/InvoiceAddItem/InvoiceAddItem";
+import {InvoicePayment} from "./views/InvoicePayment/InvoicePayment";
+import {InvoicesList} from "./views/InvoicesList/InvoicesList";
+import {InvoiceSummary} from "./views/InvoiceSummary/InvoiceSummary";
+import {Main} from "./views/Main/Main";
+import {Register} from "./views/Register/Register";
+import {Statistics} from "./views/Statistics/Statistics";
+import {UserPatch} from "./views/UserPatch/UserPatch";
 export const App = () => {
   return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <Routes>
+              <Route path="/client-add" element={<ClientAdd />} />
+              <Route path="/client-added" element={<ClientAdded />} />
+              <Route path="/client-patch" element={<ClientPatch />} />
+              <Route path="/clients-list" element={<ClientsList />} />
+              <Route path="/history" element={<History />} />
+              <Route path="/invoice-add" element={<InvoiceAdd />} />
+              <Route path="/invoice-add-item" element={<InvoiceAddItem />} />
+              <Route path="/invoice-payment" element={<InvoicePayment />} />
+              <Route path="/invoices-list" element={<InvoicesList />} />
+              <Route path="/invoice-summary" element={<InvoiceSummary />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/main" element={<Main />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/statistics" element={<Statistics />} />
+              <Route path="/user-patch" element={<UserPatch />} />
+          </Routes>
       </div>
   );
 }
