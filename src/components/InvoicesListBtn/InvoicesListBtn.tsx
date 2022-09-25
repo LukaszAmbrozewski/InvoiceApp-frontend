@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 
-import '../CommonStyles.css'
+import '../ComponentsStyles.css'
 
 export const InvoicesListBtn = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import GroupIcon from '@mui/icons-material/Group';
-import '../CommonStyles.css'
+import '../ComponentsStyles.css'
 
 export const ClientsListBtn = () => {
     return (

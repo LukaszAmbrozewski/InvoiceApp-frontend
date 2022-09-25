@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import HistoryIcon from '@mui/icons-material/History';
-import '../CommonStyles.css'
+import '../ComponentsStyles.css'
 
 export const HistoryBtn = () => {
     return (

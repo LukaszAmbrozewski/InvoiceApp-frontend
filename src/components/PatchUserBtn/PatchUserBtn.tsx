@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import EditIcon from '@mui/icons-material/Edit';
 
-import '../CommonStyles.css'
+import '../ComponentsStyles.css'
 
 export const PatchUserBtn = () => {
     return (

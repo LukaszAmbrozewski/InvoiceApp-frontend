@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import '../CommonStyles.css'
+import '../ComponentsStyles.css'
 
 export const StatisticsBtn = () => {
     return (
