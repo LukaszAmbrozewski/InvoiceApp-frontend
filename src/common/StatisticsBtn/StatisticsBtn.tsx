@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import HistoryIcon from '@mui/icons-material/History';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import '../CommonStyles.css'
 
-export const HistoryBtn = () => {
+export const StatisticsBtn = () => {
     return (
-        <Link to='/history' className="menu-btn">
+        <Link to='/statistics' className="menu-btn">
             <div className="icon-background">
-                <HistoryIcon className="menu-btn-icon"/>
+                <TrendingUpIcon className="menu-btn-icon"/>
             </div>
             <div className="menu-btn-text">
-                Historia aktywności
+                Statystyki
             </div>
         </Link>
     )

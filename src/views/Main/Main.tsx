@@ -3,6 +3,10 @@ import {InvoicesListBtn} from "../../common/InvoicesListBtn/InvoicesListBtn";
 
 import './Main.css'
 import {AddClientBtn} from "../../common/AddClientBtn/AddClientBtn";
+import {ClientsListBtn} from "../../common/ClientsListBtn/ClientsListBtn";
+import {PatchUserBtn} from "../../common/PatchUserBtn/PatchUserBtn";
+import {HistoryBtn} from "../../common/HistoryBtn/HistoryBtn";
+import {StatisticsBtn} from "../../common/StatisticsBtn/StatisticsBtn";
 
 export const Main = () => {
     return(
@@ -16,16 +20,16 @@ export const Main = () => {
                     <AddClientBtn/>
                 </div>
                 <div>
-                    <AddClientBtn/>
+                    <ClientsListBtn/>
                 </div>
                 <div>
-                    <AddClientBtn/>
+                    <PatchUserBtn/>
                 </div>
                 <div>
-                    <AddClientBtn/>
+                    <HistoryBtn/>
                 </div>
                 <div>
-                    <AddClientBtn/>
+                    <StatisticsBtn/>
                 </div>
             </div>
         </div>
