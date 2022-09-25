@@ -16,6 +16,7 @@ import {Main} from "./views/Main/Main";
 import {Register} from "./views/Register/Register";
 import {Statistics} from "./views/Statistics/Statistics";
 import {UserPatch} from "./views/UserPatch/UserPatch";
+import {Info} from "./views/Info/Info";
 export const App = () => {
   return (
       <div className="App">
@@ -35,6 +36,7 @@ export const App = () => {
               <Route path="/register" element={<Register />} />
               <Route path="/statistics" element={<Statistics />} />
               <Route path="/user-patch" element={<UserPatch />} />
+              <Route path="/info" element={<Info />} />
           </Routes>
       </div>
   );
