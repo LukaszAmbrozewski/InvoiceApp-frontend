@@ -10,6 +10,7 @@
 
 .menu-box{
     margin-top: 170px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     align-content: center;

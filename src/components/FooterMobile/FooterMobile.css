@@ -1,0 +1,38 @@
+.footer-mobile{
+    background-color: #1a1a1a;
+    border-top: 1px solid #212121;
+    height: 15px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.home-btn, .info-btn{
+    color: #FFFFFF;
+    border-radius: 40px;
+    background-color: #1a1a1a;
+}
+
+.add-invoice-btn{
+    background-color: #1e90ff;
+    border-radius: 40px;
+    color: #FFFFFF;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transform: scale(1.15);
+}
+
+.add-invoice-btn:hover, .home-btn:hover, .info-btn:hover{
+    box-shadow: 0 0 0 5px #1a1a1a, 0 0 0 8px #1e90ff;
+    transition: 0.6s;
+}

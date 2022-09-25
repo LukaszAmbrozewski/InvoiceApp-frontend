@@ -8,6 +8,7 @@ import {PatchUserBtn} from "../../components/PatchUserBtn/PatchUserBtn";
 import {HistoryBtn} from "../../components/HistoryBtn/HistoryBtn";
 import {StatisticsBtn} from "../../components/StatisticsBtn/StatisticsBtn";
 import {HeaderMobile} from "../../components/HeaderMobile/HeaderMobile";
+import {FooterMobile} from "../../components/FooterMobile/FooterMobile";
 
 export const Main = () => {
     return(
@@ -33,6 +34,7 @@ export const Main = () => {
                     <StatisticsBtn/>
                 </div>
             </div>
+            <FooterMobile/>
         </nav>
     )
 }
