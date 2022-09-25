@@ -10,7 +10,7 @@ export const InvoicesListBtn = () => {
             <div className="icon-background">
                 <FormatListBulletedIcon className="menu-btn-icon"/>
             </div>
-            <div>
+            <div className="menu-btn-text">
                 Twoje faktury
             </div>
         </Link>

@@ -10,7 +10,7 @@ export const AddClientBtn = () => {
             <div className="icon-background" style={{backgroundColor: '#10a801'}}>
                 <AddIcon className="menu-btn-icon"/>
             </div>
-            <div>
+            <div className="menu-btn-text">
                 Dodaj kontrahenta
             </div>
         </Link>

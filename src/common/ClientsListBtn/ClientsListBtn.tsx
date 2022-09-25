@@ -5,11 +5,11 @@ import '../CommonStyles.css'
 
 export const ClientsListBtn = () => {
     return (
-        <Link to='/invoices-list' className="menu-btn">
+        <Link to='/clients-list' className="menu-btn">
             <div className="icon-background">
                 <GroupIcon className="menu-btn-icon"/>
             </div>
-            <div>
+            <div className="menu-btn-text">
                 Lista kontrahentów
             </div>
         </Link>
