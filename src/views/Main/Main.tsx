@@ -1,17 +1,18 @@
 import React from 'react';
-import {InvoicesListBtn} from "../../common/InvoicesListBtn/InvoicesListBtn";
+import {InvoicesListBtn} from "../../components/InvoicesListBtn/InvoicesListBtn";
 
 import './Main.css'
-import {AddClientBtn} from "../../common/AddClientBtn/AddClientBtn";
-import {ClientsListBtn} from "../../common/ClientsListBtn/ClientsListBtn";
-import {PatchUserBtn} from "../../common/PatchUserBtn/PatchUserBtn";
-import {HistoryBtn} from "../../common/HistoryBtn/HistoryBtn";
-import {StatisticsBtn} from "../../common/StatisticsBtn/StatisticsBtn";
+import {AddClientBtn} from "../../components/AddClientBtn/AddClientBtn";
+import {ClientsListBtn} from "../../components/ClientsListBtn/ClientsListBtn";
+import {PatchUserBtn} from "../../components/PatchUserBtn/PatchUserBtn";
+import {HistoryBtn} from "../../components/HistoryBtn/HistoryBtn";
+import {StatisticsBtn} from "../../components/StatisticsBtn/StatisticsBtn";
+import {HeaderMobile} from "../../components/HeaderMobile/HeaderMobile";
 
 export const Main = () => {
     return(
-        <div className="main">
-            Strona główna
+        <nav className="main">
+            <HeaderMobile mainHeaderText='Strona główna' secondHeaderText='Zarządzaj swoimi fakturami'/>
             <div className="menu-box">
                 <div>
                     <InvoicesListBtn/>
@@ -32,6 +33,6 @@ export const Main = () => {
                     <StatisticsBtn/>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
