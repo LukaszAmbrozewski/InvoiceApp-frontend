@@ -5,7 +5,6 @@ import {ShowPersonMenuBtn} from "../ShowPersonMenuBtn/ShowPersonMenuBtn";
 
 interface Props{
     mainHeaderText: string;
-    secondHeaderText: string;
 }
 
 export const HeaderMobile = (props: Props) => {
@@ -15,7 +14,7 @@ export const HeaderMobile = (props: Props) => {
                 <div>{props.mainHeaderText}</div>
                 <ShowPersonMenuBtn/>
             </h1>
-            <h2 className="mobile-second-header">{props.secondHeaderText}</h2>
+
         </div>
     )
 }

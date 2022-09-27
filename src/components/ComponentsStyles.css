@@ -41,3 +41,15 @@
     display: flex;
     align-items: center;
 }
+
+@media only screen and (max-width: 350px) {
+    .menu-btn {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu-btn-text{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
