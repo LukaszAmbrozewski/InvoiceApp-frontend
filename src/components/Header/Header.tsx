@@ -1,13 +1,13 @@
 import React from 'react';
 
-import './HeaderMobile.css'
+import './Header.css'
 import {ShowPersonMenuBtn} from "../ShowPersonMenuBtn/ShowPersonMenuBtn";
 
 interface Props{
     mainHeaderText: string;
 }
 
-export const HeaderMobile = (props: Props) => {
+export const Header = (props: Props) => {
     return(
         <div className="header-mobile-box">
             <h1 className='mobile-main-header'>

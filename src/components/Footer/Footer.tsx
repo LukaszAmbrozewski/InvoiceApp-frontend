@@ -12,7 +12,7 @@ export const Footer = () => {
         <> {
             isMobile ? (
             <footer className="footer-mobile">
-            <Link to='/home' className="home-btn"><HomeIcon/></Link>
+            <Link to='/main' className="home-btn"><HomeIcon/></Link>
             <Link to='/invoice-add' className="add-invoice-btn"><AddIcon/></Link>
             <Link to='/info' className="info-btn"><InfoIcon/></Link>
             </footer>
