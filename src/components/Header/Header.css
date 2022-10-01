@@ -53,9 +53,18 @@
     justify-content: flex-end;
 }
 
+.header-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 30px;
+    transition: 0.6s;
+    background-color: #1a1a1a;
+}
+
 .header-icon {
     color: #FFFFFF;
-    padding: 0 0 0 0;
+    margin: 3px 0 0 3px;
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -64,19 +73,13 @@
 
 .header-add-icon {
     color: #FFFFFF;
+    margin: 3px 0 0 3px;
     background-color: #1e90ff;
     border-radius: 15px;
 }
 
-.header-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    margin-right: 30px;
-}
 
-.header-icon:hover, .header-add-icon:hover {
-    box-shadow: 0 0 0 5px #1a1a1a, 0 0 0 8px #1e90ff;
+.header-btn:hover {
+    box-shadow: 0 0 0 3px #1a1a1a, 0 0 0 6px #1e90ff;
     transition: 0.6s;
-    transform: scale(1.3);
 }
