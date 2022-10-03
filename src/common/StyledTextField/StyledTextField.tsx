@@ -14,6 +14,8 @@ export const StyledTextField = styled(TextField, {
             border: 0,
             transform: 'scale(1)',
         },
+        cursor: "pointer",
+        autoComplete: "off",
     },
     label: {
         color: '#696868',
