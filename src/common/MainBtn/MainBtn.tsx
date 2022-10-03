@@ -16,7 +16,7 @@ export const MainBtn = (props: Props) => {
                 <Link className="main-btn" onClick={props.onClick} to={props.to}>{props.text}</Link>
             </div>
             : <div className="main-btn-box">
-                <button className="main-btn" onClick={props.onClick}>{props.text}</button>
+                <button className="main-btn" type="button" onClick={props.onClick}>{props.text}</button>
             </div>
     )
 }

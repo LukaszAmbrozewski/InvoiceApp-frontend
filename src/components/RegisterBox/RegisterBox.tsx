@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import {StyledTextField} from "../../common/StyledTextField/StyledTextField";
+import {MainBtn} from "../../common/MainBtn/MainBtn";
+import {ShowPasswordBtn} from "../../common/ShowPasswordBtn/ShowPasswordBtn";
 import './RegisterBox.css'
 import '../ComponentsStyles.css'
-import VisibilityIcon from '@mui/icons-material/Visibility';
 
 
 export const RegisterBox = () => {
@@ -23,7 +24,6 @@ export const RegisterBox = () => {
     return (
         <form className="reg-box" onSubmit={register}>
             <p className="reg-text">Email</p>
-            <p>
                 <StyledTextField
                     id="email"
                     label="Wpisz email"
@@ -31,9 +31,7 @@ export const RegisterBox = () => {
                     className="field-box"
                     size="small"
                 />
-            </p>
             <p className="reg-text">Hasło</p>
-            <p>
                 <StyledTextField
                     id="password"
                     label="Wpisz hasło"
@@ -41,16 +39,9 @@ export const RegisterBox = () => {
                     className="field-box"
                     size="small"
                     type={typePassword}
-                    autoComplete="off"
                 />
-            </p>
-            <p className="field-box, visibility-btn-box">
-                <button className="visibility-btn" type="button" onClick={changeVisibilityPassword}>
-                    <VisibilityIcon/>
-                </button>
-            </p>
+            <ShowPasswordBtn onClick={changeVisibilityPassword}/>
             <p className="reg-text">Powtórz hasło</p>
-            <p>
                 <StyledTextField
                     id="check-password"
                     label="Wpisz ponownie hasło"
@@ -58,14 +49,9 @@ export const RegisterBox = () => {
                     className="field-box"
                     size="small"
                     type={typeCheckPassword}
-                    autoComplete="off"
                 />
-            </p>
-            <p className="field-box, visibility-btn-box">
-                <button className="visibility-btn" type="button" onClick={changeVisibilityCheckPassword}>
-                    <VisibilityIcon/>
-                </button>
-            </p>
+            <ShowPasswordBtn onClick={changeVisibilityCheckPassword}/>
+            <MainBtn text="Zarejestruj"/>
         </form>
     )
 }
