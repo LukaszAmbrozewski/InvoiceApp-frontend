@@ -17,6 +17,9 @@ import {Register} from "./views/Register/Register";
 import {Statistics} from "./views/Statistics/Statistics";
 import {UserPatch} from "./views/UserPatch/UserPatch";
 import {Info} from "./views/Info/Info";
+import {UserAdded} from "./views/UserAdded/UserAdded";
+import {UserAddFailed} from "./views/UserAddFailed/UserAddFailed";
+import {Error} from "./views/Error/Error";
 export const App = () => {
   return (
       <div className="App">
@@ -37,6 +40,9 @@ export const App = () => {
               <Route path="/statistics" element={<Statistics />} />
               <Route path="/user-patch" element={<UserPatch />} />
               <Route path="/info" element={<Info />} />
+              <Route path="/user-added" element={<UserAdded />} />
+              <Route path="/user-add-failed" element={<UserAddFailed />} />
+              <Route path="/error" element={<Error />} />
           </Routes>
       </div>
   );
