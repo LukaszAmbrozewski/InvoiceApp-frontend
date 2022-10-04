@@ -54,7 +54,7 @@
     }
 }
 
-.user-added-box{
+.main-info-box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -63,13 +63,13 @@
     align-items: center;
 }
 
-.user-added-text{
+.main-info-text{
     font-size: 18px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.user-added-icon{
+.main-info-icon{
     margin-top: 50px;
     transform: scale(3)
 }
