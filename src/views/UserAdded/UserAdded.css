@@ -1,0 +1,13 @@
+.user-added-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.user-added-text{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
