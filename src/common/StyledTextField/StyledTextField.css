@@ -9,3 +9,9 @@
     border-radius: 15px;
     top: 0;
 }
+
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-error:after{
+    border: 2px solid #d32f2f;
+    border-radius: 15px;
+    top: 0;
+}

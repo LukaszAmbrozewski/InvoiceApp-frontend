@@ -7,7 +7,9 @@ interface Props {
     text: string;
     to?: string;
     onClick?: MouseEventHandler;
+    type?: 'submit' | 'reset' | 'button' | undefined;
 }
+
 
 export const MainBtn = (props: Props) => {
     return (
@@ -16,7 +18,7 @@ export const MainBtn = (props: Props) => {
                 <Link className="main-btn" onClick={props.onClick} to={props.to}>{props.text}</Link>
             </div>
             : <div className="main-btn-box">
-                <button className="main-btn" type="button" onClick={props.onClick}>{props.text}</button>
+                <button className="main-btn" onClick={props.onClick} type={props.type ? props.type : 'button'}>{props.text}</button>
             </div>
     )
 }
