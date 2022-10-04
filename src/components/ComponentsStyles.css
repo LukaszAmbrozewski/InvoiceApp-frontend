@@ -53,3 +53,23 @@
         margin-top: 10px;
     }
 }
+
+.user-added-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 90vw;
+    text-align: center;
+    align-items: center;
+}
+
+.user-added-text{
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.user-added-icon{
+    margin-top: 50px;
+    transform: scale(3)
+}
