@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import { Field, Form, Formik } from "formik";
 import {schemaRegister} from "../../Validations/UserValidation";
+import {useNavigate} from 'react-router-dom';
 import {StyledTextField} from "../../common/StyledTextField/StyledTextField";
-import './RegisterBox.css'
-import '../ComponentsStyles.css'
 import {ShowPasswordBtn} from "../../common/ShowPasswordBtn/ShowPasswordBtn";
 import {MainBtn} from "../../common/MainBtn/MainBtn";
 import {apiUrl} from "../../config/api";
+import './RegisterBox.css'
+import '../ComponentsStyles.css'
 
 const initialValues = {
     email: "",
@@ -23,6 +24,7 @@ interface FormValues {
 export const RegisterBox = () => {
     const [typePassword, setTypePassword] = useState<string>('password');
     const [typeCheckPassword, setTypeCheckPassword] = useState<string>('password');
+    let navigate = useNavigate();
 
     const changeVisibilityPassword = () => {
         setTypePassword((typePassword === 'password') ? 'string' : 'password')
@@ -48,11 +50,13 @@ export const RegisterBox = () => {
         });
 
         const data = await res.json();
-        console.log(data)
         if(data.id){
-
+            navigate('/user-added')
+        } else if (data.error === "Email is already exists!"){
+            navigate('/user-add-failed')
+        } else {
+            navigate('/error')
         }
-
     }
 
     return (
