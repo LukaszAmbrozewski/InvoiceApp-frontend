@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import './App.css';
 import {Login} from "./views/Login/Login";
@@ -20,7 +20,11 @@ import {Info} from "./views/Info/Info";
 import {UserAdded} from "./views/UserAdded/UserAdded";
 import {UserAddFailed} from "./views/UserAddFailed/UserAddFailed";
 import {Error} from "./views/Error/Error";
+import {authContext} from "./contexts/auth-context";
+
 export const App = () => {
+    const ctx = useContext(authContext);
+
   return (
       <div className="App">
           <Routes>
@@ -43,6 +47,7 @@ export const App = () => {
               <Route path="/user-added" element={<UserAdded />} />
               <Route path="/user-add-failed" element={<UserAddFailed />} />
               <Route path="/error" element={<Error />} />
+              <Route path="/" element={(ctx.id === '') ? <Login /> : <Main />} />
           </Routes>
       </div>
   );
