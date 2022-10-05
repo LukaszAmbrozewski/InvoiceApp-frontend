@@ -1,0 +1,31 @@
+.login-text{
+    font-size: 16px;
+    padding: 20px 0 5px 10px;
+    color: #FFFFFF;
+}
+
+.login-text-bottom{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.login-line{
+    margin-top: 70px;
+    border: 1px solid #656363;
+    width: 100%;
+    max-width: 700px;
+}
+
+.login-failed-info{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.login-failed-icon{
+    transform: scale(1.7);
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
