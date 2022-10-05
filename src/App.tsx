@@ -21,6 +21,7 @@ import {UserAdded} from "./views/UserAdded/UserAdded";
 import {UserAddFailed} from "./views/UserAddFailed/UserAddFailed";
 import {Error} from "./views/Error/Error";
 import {authContext} from "./contexts/auth-context";
+import {UserInfo} from "./views/UserInfo/UserInfo";
 
 export const App = () => {
     const ctx = useContext(authContext);
@@ -47,6 +48,7 @@ export const App = () => {
               <Route path="/user-added" element={<UserAdded />} />
               <Route path="/user-add-failed" element={<UserAddFailed />} />
               <Route path="/error" element={<Error />} />
+              <Route path="/user-info" element={<UserInfo />} />
               <Route path="/" element={(ctx.id === '') ? <Login /> : <Main />} />
           </Routes>
       </div>

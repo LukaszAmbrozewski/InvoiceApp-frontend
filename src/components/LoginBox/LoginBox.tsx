@@ -23,7 +23,7 @@ interface FormValues {
 export const LoginBox = () => {
     const [typePassword, setTypePassword] = useState<string>('password');
     const [loginFailed, setLoginFailed] = useState<boolean>(false);
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     const changeVisibilityPassword = () => {
         setTypePassword((typePassword === 'password') ? 'string' : 'password')

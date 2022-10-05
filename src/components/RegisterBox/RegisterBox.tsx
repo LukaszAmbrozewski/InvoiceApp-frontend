@@ -24,7 +24,7 @@ interface FormValues {
 export const RegisterBox = () => {
     const [typePassword, setTypePassword] = useState<string>('password');
     const [typeCheckPassword, setTypeCheckPassword] = useState<string>('password');
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     const changeVisibilityPassword = () => {
         setTypePassword((typePassword === 'password') ? 'string' : 'password')
