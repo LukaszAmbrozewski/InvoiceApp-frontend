@@ -35,7 +35,6 @@ export const RegisterBox = () => {
     }
 
     const register = async (values: FormValues) => {
-        console.log(values)
         const res = await fetch(`${apiUrl}/user/register`, {
             method: 'POST',
             credentials: 'include',
@@ -70,7 +69,7 @@ export const RegisterBox = () => {
                 }}
             >
                 {({ errors, touched }) => (
-                    <Form className="reg-box">
+                    <Form className="auth-box">
                         <p className="reg-text">Email</p>
                         <Field
                             name="email"
