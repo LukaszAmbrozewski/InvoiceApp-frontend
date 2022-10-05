@@ -23,3 +23,20 @@ export const schemaRegister = yup
             .oneOf([yup.ref('password'), null], 'Podane hasła muszą być takie same')
     })
     .required();
+
+
+export const schemaLogin = yup
+    .object()
+    .shape({
+        email: yup
+            .string()
+            .email('Nieprawidłowy email')
+            .required('Podaj email'),
+
+        password: yup
+            .string()
+            .min(4, 'Podane hasło jest za krótkie')
+            .max(255, 'Email nie może być dłuższy niż 255 znaków')
+            .required('Podaj hasło')
+    })
+    .required();
