@@ -9,7 +9,7 @@ export const ErrorBox = () => {
             <HandymanIcon className='main-info-icon'/>
             <p className='main-info-text'>Przepraszamy. Wystąpił błąd aplikacji nad którym obecnie pracujemy. Spróbuj
                 ponownie później.</p>
-            <MainBtn to='/main' text='Przejdź do strony głównej'></MainBtn>
+            <MainBtn to='/' text='Przejdź do strony głównej'></MainBtn>
         </div>
     )
 }
