@@ -1,0 +1,43 @@
+.data-field-description-mobile{
+    font-size: 16px;
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.data-field-description{
+    font-size: 16px;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.data-field{
+    background-color: #333333;
+    width: 96%;
+    min-height: 30px;
+    max-height: 150px;
+    border-radius: 15px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    align-content: center;
+}
+
+.data-field-text{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    display: flex;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
