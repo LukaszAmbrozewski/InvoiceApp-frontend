@@ -55,6 +55,7 @@
     font-size: 18px;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .main-info-icon{
@@ -97,11 +98,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
-}
-
-.form-confirm-button{
-    margin-top: 20px;
-    width: 100%;
 }
 
 .form-box{
