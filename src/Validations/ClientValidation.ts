@@ -21,15 +21,17 @@ export const schemaAddClient = yup
             .required('Podaj miasto i kod pocztowy'),
 
         nip: yup
-            .string()
-            .min(10, 'Numer NIP musi składać się z 10 cyfr')
-            .max(10, 'Podany numer NIP jest za długi.')
+            .number()
+            .nullable(true)
+            .min(1000000000, 'Numer NIP musi składać się z 10 cyfr')
+            .max(9999999999, 'Podany numer NIP jest za długi.')
             .required('Podaj numer NIP'),
 
         regon: yup
-            .string()
-            .min(9, 'Numer REGON musi składać się z 9 lub 14 cyfr')
-            .max(14, 'Podano za długi numer REGON')
+            .number()
+            .nullable(true)
+            .min(100000000, 'Numer REGON musi składać się z 9 lub 14 cyfr')
+            .max(99999999999999, 'Podano za długi numer REGON')
             .required('Podaj numer REGON'),
 
         email: yup
@@ -40,9 +42,10 @@ export const schemaAddClient = yup
             .required('Podaj email'),
 
         phoneNumber: yup
-            .string()
-            .min(9, 'Numer telefonu musi zawierać przynajmniej 9 liczb')
-            .max(22, 'Numer telefonu nie może być dłuższy niż 22 liczby')
+            .number()
+            .nullable(true)
+            .min(100000000, 'Numer telefonu musi zawierać przynajmniej 9 liczb')
+            .max(999999999999999999, 'Numer telefonu nie może być dłuższy niż 18 liczb')
             .required('Podaj numer telefonu'),
     })
     .required();
