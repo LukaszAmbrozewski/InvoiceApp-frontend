@@ -88,7 +88,6 @@
     margin-bottom: 100px;
 }
 
-
 .data-box-mobile{
     color: #FFFFFF;
     width: 80vw;
@@ -98,6 +97,15 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+}
+
+.form-confirm-button{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-box{
+    width: 100%;
 }
 
 @media only screen and (max-width: 350px) {
