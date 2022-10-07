@@ -1,8 +1,16 @@
 import React, {useState} from 'react';
-import './OneClientOnList.css'
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import {apiUrl} from "../../config/api";
+import {useNavigate} from "react-router-dom";
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import './OneClientOnList.css'
 
 interface Props{
     id: string;
@@ -13,16 +21,47 @@ interface Props{
     regon: number;
     phoneNumber: number;
     email: string,
+    onRemoveClient: () => void;
 }
 
 export const OneClientOnList = (props: Props) => {
     const [showClientDetails, setShowClientDetails] = useState<boolean>(false)
+    const [open, setOpen] = React.useState(false);
+    const navigate = useNavigate();
+
+    const updateClientList = () => {
+        props.onRemoveClient();
+    }
 
     const showDetails = () => {
         showClientDetails ? setShowClientDetails(false) : setShowClientDetails(true)
     }
 
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const removeClient = async (clientId: string) => {
+        handleClose()
+        const res = await fetch(`${apiUrl}/clients/${clientId}`, {
+            method: 'DELETE',
+            credentials: 'include',
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+        });
+
+        const response = await res.json();
+        response.isSuccess ? updateClientList() : navigate('/error')
+    }
+
     return(
+        <>
         <div className='clients-list-box'>
             {showClientDetails ? (
                     <div className='client-info-box'>
@@ -32,7 +71,7 @@ export const OneClientOnList = (props: Props) => {
                                 <button className='modify-client-btn'>
                                     <EditIcon className='modify-client-icon'/>
                                 </button>
-                                <button className='modify-client-btn, remove-client-btn'>
+                                <button className='modify-client-btn, remove-client-btn' onClick={handleClickOpen}>
                                     <DeleteIcon className='modify-client-icon'/>
                                 </button>
                                 <button className='modify-client-btn' onClick={showDetails}>
@@ -58,7 +97,7 @@ export const OneClientOnList = (props: Props) => {
                         <button className='modify-client-btn'>
                             <EditIcon className='modify-client-icon'/>
                         </button>
-                        <button className='modify-client-btn, remove-client-btn'>
+                        <button className='modify-client-btn, remove-client-btn' onClick={handleClickOpen}>
                             <DeleteIcon className='modify-client-icon'/>
                         </button>
                         <button className='modify-client-btn' onClick={showDetails}>
@@ -68,5 +107,29 @@ export const OneClientOnList = (props: Props) => {
                 </div>
             )}
         </div>
+            <div>
+                <Dialog
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                >
+                    <DialogTitle id="alert-dialog-title">
+                        {"Czy na pewno chcesz usunąć tego kontrahenta?"}
+                    </DialogTitle>
+                    <DialogContent>
+                        <DialogContentText id="alert-dialog-description">
+                            Nazwa firmy: {props.companyName}
+                        </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button onClick={handleClose}>Anuluj</Button>
+                        <Button onClick={() => removeClient(props.id)} autoFocus>
+                            Usuń
+                        </Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
+        </>
     )
 }

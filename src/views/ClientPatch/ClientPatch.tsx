@@ -8,7 +8,7 @@ export const ClientPatch = () => {
         <nav className="views">
             <Header mainHeaderText='Edytuj dane'/>
             <SecondHeader secondHeaderText='Edytuj dane swojego kontrahenta'></SecondHeader>
-            <div>Formularz edycji danych kontrahenta.</div>
+            <div>Formularz edycji danych kontrahenta. przekaż dalej w propsie clientId.</div>
             <Footer/>
         </nav>
     )
