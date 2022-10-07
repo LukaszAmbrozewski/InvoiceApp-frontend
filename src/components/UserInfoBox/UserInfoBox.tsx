@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react';
 import {apiUrl} from "../../config/api";
 import {UserData} from "types";
 import {DataField} from "../../common/DataField/DataField";
-import {MainBtn} from "../../common/MainBtn/MainBtn";
 import {isMobile} from "react-device-detect";
 import '../ComponentsStyles.css'
+import {ConfirmBtn} from "../../common/ConfirmBtn/ConfirmBtn";
 
 const initialState = {
     id: '',
@@ -46,9 +46,7 @@ export const UserInfoBox = () => {
                 <DataField description='Numer REGON' text={userData.regon+''}></DataField>
                 <DataField description='Numer telefonu' text={userData.phoneNumber+''}></DataField>
                 <DataField description='Email' text={userData.email}></DataField>
-            <div className='form-confirm-button'>
-                <MainBtn text='Edytuj dane' to='/user-patch'/>
-            </div>
+                <ConfirmBtn text='Edytuj dane' to='/user-patch'/>
             </div>
     )
 }

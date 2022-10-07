@@ -3,13 +3,13 @@ import {Field, Form, Formik} from "formik";
 import {StyledTextField} from "../../common/StyledTextField/StyledTextField";
 import {useNavigate} from 'react-router-dom';
 import {Client} from "types";
-import { isMobile } from 'react-device-detect';
-import {MainBtn} from "../../common/MainBtn/MainBtn";
+import {isMobile} from 'react-device-detect';
 import {schemaAddClient} from "../../Validations/ClientValidation";
 import {apiUrl} from "../../config/api";
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 import './ClientAddBox.css'
 import '../ComponentsStyles.css'
+import {ConfirmBtn} from "../../common/ConfirmBtn/ConfirmBtn";
 
 
 const initialValues = {
@@ -47,9 +47,9 @@ export const ClientAddBox = () => {
         });
 
         const data = await res.json();
-        if(data.isSuccess){
+        if (data.isSuccess) {
             navigate('/client-added')
-        } else if(data.error === "Client is already exist!"){
+        } else if (data.error === "Client is already exist!") {
             setAddedError(true)
         } else {
             navigate('/error')
@@ -57,7 +57,7 @@ export const ClientAddBox = () => {
 
     }
 
-    return(
+    return (
         <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
             {addedError ?
                 (<div className="client-add-failed">
@@ -159,9 +159,7 @@ export const ClientAddBox = () => {
                             error={Boolean(errors.phoneNumber) && Boolean(touched.phoneNumber)}
                             helperText={Boolean(touched.phoneNumber) && errors.phoneNumber}
                         />
-                        <div className='form-confirm-button'>
-                            <MainBtn text="Dodaj" type='submit'/>
-                        </div>
+                        <ConfirmBtn text="Dodaj" type='submit'/>
                     </Form>
                 )}
             </Formik>
