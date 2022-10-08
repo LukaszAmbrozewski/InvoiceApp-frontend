@@ -4,6 +4,7 @@ import {apiUrl} from "../../config/api";
 import {Client} from "types";
 import {OneClientOnList} from "../OneClientOnList/OneClientOnList";
 import '../ComponentsStyles.css'
+import {Loading} from "../../common/Loading/Loading";
 
 export const ClientsListBox = () => {
     const [clientsList, setClientsList] = useState<Client[]>()
@@ -30,7 +31,7 @@ export const ClientsListBox = () => {
 
     return (
         <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
-            {!clientsList ? null : (
+            {!clientsList ? <Loading/> : (
                 clientsList.map(client => (
                         <OneClientOnList
                             id={client.id}
