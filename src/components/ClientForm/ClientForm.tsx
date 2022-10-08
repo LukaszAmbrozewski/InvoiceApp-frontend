@@ -7,7 +7,7 @@ import {Client} from "types";
 import '../ComponentsStyles.css'
 
 interface Props{
-    addClient: (values: Client) => void,
+    sendForm: (values: Client) => void,
     initialValues: Client,
     buttonText: string,
 }
@@ -18,7 +18,7 @@ export const ClientForm = (props: Props) => {
                 initialValues={props.initialValues}
                 validationSchema={schemaAddClient}
                 onSubmit={(values) => {
-                    props.addClient(values);
+                    props.sendForm(values);
                 }}
             >
                 {({errors, touched}) => (

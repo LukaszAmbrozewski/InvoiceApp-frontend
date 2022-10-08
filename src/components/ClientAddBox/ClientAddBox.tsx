@@ -43,10 +43,10 @@ export const ClientAddBox = () => {
             }),
         });
 
-        const data = await res.json();
-        if (data.isSuccess) {
+        const response = await res.json();
+        if (response.isSuccess) {
             navigate('/client-added')
-        } else if (data.error === "Client is already exist!") {
+        } else if (response.error === "Client is already exist!") {
             setAddedError(true)
         } else {
             navigate('/error')
@@ -62,7 +62,7 @@ export const ClientAddBox = () => {
                 </div>)
                 : null
             }
-        <ClientForm addClient={addClient} initialValues={initialValues} buttonText='Dodaj'/>
+        <ClientForm sendForm={addClient} initialValues={initialValues} buttonText='Dodaj'/>
         </div>
     )
 }

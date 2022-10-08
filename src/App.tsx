@@ -31,7 +31,7 @@ export const App = () => {
           <Routes>
               <Route path="/client-add" element={<ClientAdd />} />
               <Route path="/client-added" element={<ClientAdded />} />
-              <Route path="/client-patch" element={<ClientPatch />} />
+              <Route path="/client-patch/:clientPatchId" element={<ClientPatch />} />
               <Route path="/clients-list" element={<ClientsList />} />
               <Route path="/history" element={<History />} />
               <Route path="/invoice-add" element={<InvoiceAdd />} />
