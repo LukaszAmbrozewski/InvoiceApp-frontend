@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import {apiUrl} from "../../config/api";
 import {UserData} from "types";
 import {DataField} from "../../common/DataField/DataField";
 import {isMobile} from "react-device-detect";
 import '../ComponentsStyles.css'
 import {ConfirmBtn} from "../../common/ConfirmBtn/ConfirmBtn";
+import {getUserData} from "../../utils/getUserData";
 
 const initialState = {
     id: '',
@@ -21,15 +21,7 @@ export const UserInfoBox = () => {
     const [userData, setUserData] = useState<UserData>(initialState)
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch(`${apiUrl}/user`, {
-                method: 'GET',
-                credentials: 'include',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-            });
-            const data = await res.json();
+            const data = await getUserData()
             data.id ? setUserData(data) : setUserData(initialState);
         }
         fetchData();
