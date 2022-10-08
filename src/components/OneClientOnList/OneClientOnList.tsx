@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import {apiUrl} from "../../config/api";
 import {useNavigate} from "react-router-dom";
 import Button from '@mui/material/Button';
@@ -12,7 +13,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import './OneClientOnList.css'
 
-interface Props{
+interface Props {
     id: string;
     companyName: string;
     streetAddress: string;
@@ -26,7 +27,7 @@ interface Props{
 
 export const OneClientOnList = (props: Props) => {
     const [showClientDetails, setShowClientDetails] = useState<boolean>(false)
-    const [open, setOpen] = React.useState(false);
+    const [openDialog, setOpenDialog] = React.useState(false);
     const navigate = useNavigate();
 
     const updateClientList = () => {
@@ -38,11 +39,11 @@ export const OneClientOnList = (props: Props) => {
     }
 
     const handleClickOpen = () => {
-        setOpen(true);
+        setOpenDialog(true);
     };
 
     const handleClose = () => {
-        setOpen(false);
+        setOpenDialog(false);
     };
 
     const removeClient = async (clientId: string) => {
@@ -60,22 +61,26 @@ export const OneClientOnList = (props: Props) => {
         response.isSuccess ? updateClientList() : navigate('/error')
     }
 
-    return(
+    const patchClient = (patchClientId: string) => {
+        navigate(`/client-patch/${patchClientId}`);
+    }
+
+    return (
         <>
-        <div className='clients-list-box'>
-            {showClientDetails ? (
+            <div className='clients-list-box'>
+                {showClientDetails ? (
                     <div className='client-info-box'>
                         <div className='client-main-info-box'>
                             <p className='client-main-info-text'>{props.companyName}</p>
                             <div className='client-main-buttons-box'>
-                                <button className='modify-client-btn'>
+                                <button className='modify-client-btn' onClick={() => {patchClient(props.id)}}>
                                     <EditIcon className='modify-client-icon'/>
                                 </button>
                                 <button className='modify-client-btn, remove-client-btn' onClick={handleClickOpen}>
                                     <DeleteIcon className='modify-client-icon'/>
                                 </button>
                                 <button className='modify-client-btn' onClick={showDetails}>
-                                    <ExpandMoreIcon className='modify-client-icon'/>
+                                    <KeyboardArrowUpIcon className='modify-client-icon'/>
                                 </button>
                             </div>
                         </div>
@@ -90,26 +95,26 @@ export const OneClientOnList = (props: Props) => {
                             <p>Telefon: {props.phoneNumber}</p>
                         </div>
                     </div>
-            ) : (
-                <div className='client-main-info-box'>
-                    <p className='client-main-info-text'>{props.companyName}</p>
-                    <div className='client-main-buttons-box'>
-                        <button className='modify-client-btn'>
-                            <EditIcon className='modify-client-icon'/>
-                        </button>
-                        <button className='modify-client-btn, remove-client-btn' onClick={handleClickOpen}>
-                            <DeleteIcon className='modify-client-icon'/>
-                        </button>
-                        <button className='modify-client-btn' onClick={showDetails}>
-                            <ExpandMoreIcon className='modify-client-icon'/>
-                        </button>
+                ) : (
+                    <div className='client-main-info-box'>
+                        <p className='client-main-info-text'>{props.companyName}</p>
+                        <div className='client-main-buttons-box'>
+                            <button className='modify-client-btn' onClick={() => {patchClient(props.id)}}>
+                                <EditIcon className='modify-client-icon'/>
+                            </button>
+                            <button className='modify-client-btn, remove-client-btn' onClick={handleClickOpen}>
+                                <DeleteIcon className='modify-client-icon'/>
+                            </button>
+                            <button className='modify-client-btn' onClick={showDetails}>
+                                <KeyboardArrowDownIcon className='modify-client-icon'/>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            )}
-        </div>
+                )}
+            </div>
             <div>
                 <Dialog
-                    open={open}
+                    open={openDialog}
                     onClose={handleClose}
                     aria-labelledby="alert-dialog-title"
                     aria-describedby="alert-dialog-description"
