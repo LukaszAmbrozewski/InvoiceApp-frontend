@@ -1,0 +1,17 @@
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before {
+    border: 0;
+    top: 0;
+    border-radius: 15px;
+}
+
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after {
+    border: 2px solid #1976d2;
+    border-radius: 15px;
+    top: 0;
+}
+
+.css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-error:after{
+    border: 2px solid #d32f2f;
+    border-radius: 15px;
+    top: 0;
+}

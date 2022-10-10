@@ -1,0 +1,44 @@
+.person-menu{
+    position: absolute;
+    top: 66px;
+    right: 29px;
+    width: 150px;
+    height: 80px;
+    font-size: 0.8rem;
+    background-color: #1a1a1a;
+    z-index: 1;
+}
+
+.person-icon-box{
+    width: 36px;
+    height: 36px;
+    background-color: #1e90ff;
+    border-radius: 12px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.person-icon-box:hover{
+    box-shadow: 0 0 0 5px #1a1a1a, 0 0 0 8px #1e90ff;
+    transition: 0.6s;
+}
+
+.person-icon{
+    color: #ffffff;
+    padding: 6px 6px;
+}
+
+.person-menu-btn{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border:1px solid #212121;
+}
+
+.person-menu-btn:hover{
+    background-color: #1e90ff;
+}

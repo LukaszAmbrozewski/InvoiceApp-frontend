@@ -1,0 +1,26 @@
+.main-btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-btn{
+    text-decoration: none;
+    background-color: #1e90ff;
+    border: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 36px;
+    min-width: 120px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.6s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.main-btn:hover{
+    box-shadow: 0 0 0 5px #1a1a1a, 0 0 0 8px #1e90ff;
+    transition: 0.6s;
+}
