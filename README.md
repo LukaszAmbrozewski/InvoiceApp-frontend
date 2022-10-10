@@ -52,39 +52,39 @@ Start the server
 ## Mobile screens:
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/1_juvlge.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396534/InvoiceApp/Frontend/Mobile/2_wffim3.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/3_exrfrx.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/1_juvlge.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396534/InvoiceApp/Frontend/Mobile/2_wffim3.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/3_exrfrx.png" alt="Login View" width="250"/>
 </ul>
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/4_skzbuu.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/5_pprb9m.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/6_gn08au.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/4_skzbuu.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/5_pprb9m.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/6_gn08au.png" alt="Login View" width="250"/>
 </ul>
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/7_rigswz.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/8_gohrdb.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/9_t60lbn.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/7_rigswz.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/8_gohrdb.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396532/InvoiceApp/Frontend/Mobile/9_t60lbn.png" alt="Login View" width="250"/>
 </ul>
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/10_jfqumx.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/11_o5frsq.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/12_fdtblh.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/10_jfqumx.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/11_o5frsq.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/12_fdtblh.png" alt="Login View" width="250"/>
 </ul>
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/13_znjtkl.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/14_mjnqlp.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/15_y7xbd8.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/13_znjtkl.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/14_mjnqlp.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/15_y7xbd8.png" alt="Login View" width="250"/>
 </ul>
 
 <ul>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/16_clnio3.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/17_qehofn.png" alt="Login View" width="300"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/18_siqxdn.png" alt="Login View" width="300"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/16_clnio3.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/17_qehofn.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/18_siqxdn.png" alt="Login View" width="250"/>
 </ul>
 
 ## Laptop or PC screens:
