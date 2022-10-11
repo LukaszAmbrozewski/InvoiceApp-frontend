@@ -12,9 +12,9 @@ const initialState = {
     companyName: '',
     streetAddress: '',
     cityAndCode: '',
-    nip: null,
-    regon: null,
-    phoneNumber: null,
+    nip: undefined,
+    regon: undefined,
+    phoneNumber: undefined,
 };
 
 export const UserInfoBox = () => {
