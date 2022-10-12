@@ -17,11 +17,12 @@ export const HistoryBox = () => {
         fetchUserHistory()
     })
 
-
 return (
     <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
         {history ? (
-            history.map(history => (
+            history
+                .sort((a, b) => b.fullDateAndTime.localeCompare(a.fullDateAndTime))
+                .map(history => (
                 <OneHistoryAction action={history.action} date={history.date} time={history.time} key={history.id}/>
             ))
         ) : (
@@ -30,5 +31,3 @@ return (
     </div>
 )
 }
-
-// // Zmniejsz odstęp pomiedzy linijkami data i godzina
