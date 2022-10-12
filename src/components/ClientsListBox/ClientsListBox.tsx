@@ -1,24 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {isMobile} from 'react-device-detect';
-import {apiUrl} from "../../config/api";
 import {Client} from "types";
 import {OneClientOnList} from "../OneClientOnList/OneClientOnList";
 import '../ComponentsStyles.css'
 import {Loading} from "../../common/Loading/Loading";
+import {getClients} from "../../utils/getClients";
 
 export const ClientsListBox = () => {
     const [clientsList, setClientsList] = useState<Client[]>()
 
     const fetchClientsData = async () => {
-        const res = await fetch(`${apiUrl}/clients`, {
-            method: 'GET',
-            credentials: 'include',
-            headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            },
-        });
-        const data = await res.json();
+        const data = await getClients()
         if (data) {
             setClientsList(data)
         }
