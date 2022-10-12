@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom/client";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {App} from "./App";
 import {BrowserRouter} from "react-router-dom";
 import AuthContext from "./contexts/auth-context";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
     <React.StrictMode>
         <BrowserRouter>
             <AuthContext>
@@ -14,8 +15,6 @@ ReactDOM.render(
             </AuthContext>
         </BrowserRouter>
     </React.StrictMode>
-    ,
-    document.getElementById('root')
 );
 
 reportWebVitals();

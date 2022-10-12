@@ -35,6 +35,7 @@ export const ClientsListBox = () => {
                 clientsList.map(client => (
                         <OneClientOnList
                             id={client.id}
+                            key={client.id}
                             companyName={client.companyName}
                             streetAddress={client.streetAddress}
                             cityAndCode={client.cityAndCode}
