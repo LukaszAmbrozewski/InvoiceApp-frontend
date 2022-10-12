@@ -32,7 +32,9 @@ export const ClientsListBox = () => {
     return (
         <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
             {!clientsList ? <Loading/> : (
-                clientsList.map(client => (
+                clientsList
+                    .sort((a, b) => a.companyName.localeCompare(b.companyName))
+                    .map(client => (
                         <OneClientOnList
                             id={client.id}
                             key={client.id}
