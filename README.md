@@ -87,6 +87,10 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396533/InvoiceApp/Frontend/Mobile/18_siqxdn.png" alt="Login View" width="250"/>
 </ul>
 
+<ul>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665559938/InvoiceApp/Frontend/Mobile/historia_aktywno%C5%9Bci_mobile_unjwot.png" alt="Login View" width="250"/>
+</ul>
+
 ## Laptop or PC screens:
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396552/InvoiceApp/Frontend/Desktop/1_mavuaa.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396552/InvoiceApp/Frontend/Desktop/2_xvtp3w.png" alt="Login View" width="900"/>
@@ -105,11 +109,13 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/15_vw4c9a.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/16_pdhoo6.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/17_ysp0ar.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/17_ysp0ar.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665559876/InvoiceApp/Frontend/Desktop/historia_aktwno%C5%9Bci_dekstop_ukoxau.png" alt="Login View" width="900"/>
+
 
 ## Features in develop:
 * adding invoices,
 * editing invoices,
-* user activity history view,
 * statistics view,
 * application information view,
 
