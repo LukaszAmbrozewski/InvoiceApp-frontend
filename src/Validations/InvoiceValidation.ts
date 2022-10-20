@@ -24,17 +24,6 @@ export const schemaAddInvoice = yup
             .min(6, 'Imię i nazwisko musi posiadać conajmniej 6 znaków')
             .max(120, 'Imię i nazwisko nie może być dłuższe niż 120 znaków')
             .required('Podaj imię i nazwisko'),
-
-        dueDate: yup
-            .string()
-            .max(10, 'Nieprawidłowa data')
-            .required('Podaj datę płatności'),
-
-        accountNumber: yup
-            .string()
-            .min(26, 'Numer konta musi zawierać 26 cyfr')
-            .max(26, 'Numer konta nie może być dłuższy niż 26 cyfr')
-            .required('Podaj numer konta'),
     })
     .required();
 
