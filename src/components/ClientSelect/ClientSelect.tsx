@@ -10,9 +10,11 @@ import '../ComponentsStyles.css';
 interface Props {
     selectClient: (clientId: string) => void;
     clientsList: Client[];
+    clientId: string;
 }
 
 export const ClientSelect = (props: Props) => {
+
     const handleChange = (event: SelectChangeEvent) => {
         props.selectClient(event.target.value);
     };
@@ -22,7 +24,14 @@ export const ClientSelect = (props: Props) => {
             className='select-client-box'
             variant="filled"
             sx={{
-                div: {color: '#FFFFFF', '&:after': {border: 0}},
+                div: {
+                    border: 0,
+                    borderRadius: '15px',
+                    backgroundColor: '#333333',
+                    color: '#FFFFFF',
+                    '&:after': {border: 0, borderRadius: '15px', color: '#333333'},
+                    '&:before': {border: 0, borderRadius: '15px', color: '#333333'},
+                },
                 label: {color: '#696868', fontWeight: 'bold'},
                 svg: {color: '#FFFFFF'}
             }}
@@ -31,6 +40,7 @@ export const ClientSelect = (props: Props) => {
             <Select
                 labelId="demo-simple-select-filled-label"
                 id="demo-simple-select-filled"
+                value={props.clientId}
                 onChange={handleChange}
                 className='select-client-option'
             >
@@ -42,4 +52,3 @@ export const ClientSelect = (props: Props) => {
         </FormControl>
     )
 }
-
