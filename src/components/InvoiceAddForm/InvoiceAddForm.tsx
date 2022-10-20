@@ -9,19 +9,17 @@ import {apiUrl} from "../../config/api";
 import {useNavigate} from "react-router-dom";
 import './InvoiceAddForm.css'
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
+import {getDate} from "../../utils/getDate";
 
 interface Props{
     buttonText: string,
     clientId: string;
 }
 
-const now = new Date();
-const fullDate = `${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}`
-
 const initialValues = {
     place: "",
-    creationDate: fullDate,
-    dateOfService: fullDate,
+    creationDate: getDate(),
+    dateOfService: getDate(),
     personCreatingInvoice: "",
 };
 
@@ -50,7 +48,7 @@ export const InvoiceAddFrom = (props: Props) => {
             });
 
             const response = await res.json();
-            response.isSuccess ? navigate('/invoice-payment') : navigate('/error');
+            response.isSuccess ? navigate(`/invoice-payment/${response.id}`) : navigate('/error');
         }
     }
 
