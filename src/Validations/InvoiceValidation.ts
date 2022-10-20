@@ -27,3 +27,18 @@ export const schemaAddInvoice = yup
     })
     .required();
 
+export const schemaAddPayment = yup
+    .object()
+    .shape({
+        dueDate: yup
+            .string()
+            .max(10, 'Nieprawidłowa data')
+            .required('Podaj datę utworzenia faktury'),
+
+        accountNumber: yup
+            .number()
+            .min(10000000000000000000000000, 'Numer konta musi składać się z 26 cyfr')
+            .max(99999999999999999999999999, 'Numer konta musi składać się z 26 cyfr')
+    })
+    .required();
+
