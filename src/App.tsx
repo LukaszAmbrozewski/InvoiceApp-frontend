@@ -35,8 +35,8 @@ export const App = () => {
               <Route path="/clients-list" element={<ClientsList />} />
               <Route path="/history" element={<History />} />
               <Route path="/invoice-add" element={<InvoiceAdd />} />
-              <Route path="/invoice-add-item" element={<InvoiceAddItem />} />
-              <Route path="/invoice-payment" element={<InvoicePayment />} />
+              <Route path="/invoice-add-item/:invoiceId" element={<InvoiceAddItem />} />
+              <Route path="/invoice-payment/:invoiceId" element={<InvoicePayment />} />
               <Route path="/invoices-list" element={<InvoicesList />} />
               <Route path="/invoice-summary" element={<InvoiceSummary />} />
               <Route path="/login" element={<Login />} />
