@@ -51,6 +51,7 @@ export const App = () => {
               <Route path="/error" element={<Error />} />
               <Route path="/user-info" element={<UserInfo />} />
               <Route path="/invoice-added-item/:invoiceId" element={<InvoiceAddedItem />} />
+              <Route path="/invoice-summary/:invoiceId" element={<InvoiceSummary />} />
               <Route path="/" element={(ctx.id === '') ? <Login /> : <Main />} />
           </Routes>
       </div>
