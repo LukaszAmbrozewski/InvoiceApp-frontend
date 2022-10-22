@@ -1,0 +1,23 @@
+.main-info-header{
+    font-size: 40px;
+    margin: 30px 0 10px;
+}
+
+.info-header{
+    font-size: 30px;
+    margin: 30px 0 30px 0;
+}
+
+.info-text{
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.info-icon{
+    transform: scale(3)
+}
+
+.contact-icon{
+    margin: 40px 0 30px;
+}
