@@ -89,6 +89,19 @@ Start the server
 
 <ul>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665573103/InvoiceApp/Frontend/Mobile/historia_aktwno%C5%9Bci_mobile_-_sort_vt6nnq.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_1_mobile_uan9bv.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_2_mobile_vurcca.png" alt="Login View" width="250"/>
+</ul>
+
+<ul>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_3_mobile_mrhtzx.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_4_mobile_u3bwxv.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_5_mobile_yew6gw.png" alt="Login View" width="250"/>
+</ul>
+
+<ul>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_6_mobile_cwwmua.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423824/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_7_mobile_k3gbpp.png" alt="Login View" width="250"/>
 </ul>
 
 ## Laptop or PC screens:
@@ -109,12 +122,17 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/15_vw4c9a.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/16_pdhoo6.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/17_ysp0ar.png" alt="Login View" width="900"/>
-<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396554/InvoiceApp/Frontend/Desktop/17_ysp0ar.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665573025/InvoiceApp/Frontend/Desktop/historia_aktwno%C5%9Bci_dekstop_-_sort_em9d97.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_1_-_desktop_lbsvvp.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_2_-_desktop_kqqfxq.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_3_-_desktop_b3j9pj.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_4_-_desktop_zavfpn.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_5_-_desktop_wcmzd3.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_6_-_desktop_gflp5x.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_7_-_desktop_inv9rj.png" alt="Login View" width="900"/>
 
 
 ## Features in develop:
-* adding invoices,
 * editing invoices,
 * statistics view,
 * application information view,
