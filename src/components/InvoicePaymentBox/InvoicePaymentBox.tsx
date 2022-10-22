@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import {PaymentSelect} from "../PaymentSelect/PaymentSelect";
 import {isMobile} from "react-device-detect";
-import '../ComponentsStyles.css'
 import {PaymentForm} from "../PaymentForm/PaymentForm";
+import '../ComponentsStyles.css'
 
 export const InvoicePaymentBox = () => {
     const [paymentMethod, setPaymentMethod] = useState<string>('')
