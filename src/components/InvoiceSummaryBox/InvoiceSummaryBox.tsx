@@ -56,6 +56,7 @@ export const InvoiceSummaryBox = () => {
                         <OneProductOnInvoice oneItemInfo={item} key={item.id} updateData={getInvoiceData}/>
                     ))}
                     <ConfirmBtn text='Zatwierdź i przejdź do strony głównej' to='/main'></ConfirmBtn>
+                    <ConfirmBtn text='Przejdź do listy faktur' to='/invoices-list'></ConfirmBtn>
                 </>
             ) : <Loading/>
             }
