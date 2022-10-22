@@ -22,6 +22,7 @@ import {UserAddFailed} from "./views/UserAddFailed/UserAddFailed";
 import {Error} from "./views/Error/Error";
 import {authContext} from "./contexts/auth-context";
 import {UserInfo} from "./views/UserInfo/UserInfo";
+import {InvoiceAddedItem} from "./views/InvoiceAddedItem/InvoiceAddedItem";
 
 export const App = () => {
     const ctx = useContext(authContext);
@@ -35,8 +36,8 @@ export const App = () => {
               <Route path="/clients-list" element={<ClientsList />} />
               <Route path="/history" element={<History />} />
               <Route path="/invoice-add" element={<InvoiceAdd />} />
-              <Route path="/invoice-add-item" element={<InvoiceAddItem />} />
-              <Route path="/invoice-payment" element={<InvoicePayment />} />
+              <Route path="/invoice-add-item/:invoiceId" element={<InvoiceAddItem />} />
+              <Route path="/invoice-payment/:invoiceId" element={<InvoicePayment />} />
               <Route path="/invoices-list" element={<InvoicesList />} />
               <Route path="/invoice-summary" element={<InvoiceSummary />} />
               <Route path="/login" element={<Login />} />
@@ -49,6 +50,8 @@ export const App = () => {
               <Route path="/user-add-failed" element={<UserAddFailed />} />
               <Route path="/error" element={<Error />} />
               <Route path="/user-info" element={<UserInfo />} />
+              <Route path="/invoice-added-item/:invoiceId" element={<InvoiceAddedItem />} />
+              <Route path="/invoice-summary/:invoiceId" element={<InvoiceSummary />} />
               <Route path="/" element={(ctx.id === '') ? <Login /> : <Main />} />
           </Routes>
       </div>

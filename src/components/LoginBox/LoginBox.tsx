@@ -58,7 +58,7 @@ export const LoginBox = () => {
             >
                 {({errors, touched}) => (
                     <Form>
-                        <p className="login-text">Email</p>
+                        <p className="field-description-text">Email</p>
                         <Field
                             name="email"
                             type="email"
@@ -71,7 +71,7 @@ export const LoginBox = () => {
                             helperText={Boolean(touched.email) && errors.email}
                         />
 
-                        <p className="login-text">Hasło</p>
+                        <p className="field-description-text">Hasło</p>
                         <Field
                             name="password"
                             type={typePassword}

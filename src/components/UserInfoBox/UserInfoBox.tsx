@@ -31,13 +31,13 @@ export const UserInfoBox = () => {
         (userData.id === '')
             ? null
             : <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
-                <DataField description='Nazwa firmy' text={userData.companyName}></DataField>
-                <DataField description='Ulica i numer' text={userData.streetAddress}></DataField>
-                <DataField description='Miasto i kod pocztowy' text={userData.cityAndCode}></DataField>
-                <DataField description='Numer NIP' text={userData.nip+''}></DataField>
-                <DataField description='Numer REGON' text={userData.regon+''}></DataField>
-                <DataField description='Numer telefonu' text={userData.phoneNumber+''}></DataField>
-                <DataField description='Email' text={userData.email}></DataField>
+                <DataField description='Nazwa firmy' text={userData.companyName}/>
+                <DataField description='Ulica i numer' text={userData.streetAddress}/>
+                <DataField description='Miasto i kod pocztowy' text={userData.cityAndCode}/>
+                <DataField description='Numer NIP' text={userData.nip + ''}/>
+                <DataField description='Numer REGON' text={userData.regon + ''}/>
+                <DataField description='Numer telefonu' text={userData.phoneNumber + ''}/>
+                <DataField description='Email' text={userData.email}/>
                 <ConfirmBtn text='Edytuj dane' to='/user-patch'/>
             </div>
     )
