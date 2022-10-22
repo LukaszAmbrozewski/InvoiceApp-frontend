@@ -102,6 +102,13 @@ Start the server
 <ul>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423823/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_6_mobile_cwwmua.png" alt="Login View" width="250"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666423824/InvoiceApp/Frontend/Mobile/Dodawanie%20faktury%20/dodawanie_faktury_7_mobile_k3gbpp.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444561/InvoiceApp/Frontend/Mobile/info%20i%20lista%20faktur/lista_faktur_mobile_z4uy8e.png" alt="Login View" width="250"/>
+</ul>
+
+<ul>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444561/InvoiceApp/Frontend/Mobile/info%20i%20lista%20faktur/info_o_aplikacji_1_-_mobile_jhc5vu.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444561/InvoiceApp/Frontend/Mobile/info%20i%20lista%20faktur/info_o_aplikacji_2_-_mobile_nwwu9g.png" alt="Login View" width="250"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444561/InvoiceApp/Frontend/Mobile/info%20i%20lista%20faktur/info_o_aplikacji_3_-_mobile_qgvgtm.png" alt="Login View" width="250"/>
 </ul>
 
 ## Laptop or PC screens:
@@ -130,12 +137,13 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_5_-_desktop_wcmzd3.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_6_-_desktop_gflp5x.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666424770/InvoiceApp/Frontend/Desktop/Dodawanie%20faktury/dodawanie_faktury_7_-_desktop_inv9rj.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/Lista_faktur_-_desktop_aaf4x2.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/info_a_aplikacji_1_-_desktop_s8vxrh.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/info_a_aplikacji_2_-_desktop_drclw2.png" alt="Login View" width="900"/>
 
 
 ## Features in develop:
-* editing invoices,
 * statistics view,
-* application information view,
 
 ## Contact
 
