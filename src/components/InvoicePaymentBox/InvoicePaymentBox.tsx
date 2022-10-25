@@ -1,23 +1,26 @@
-import React, {useState} from 'react'
-import {PaymentSelect} from "../PaymentSelect/PaymentSelect";
-import {isMobile} from "react-device-detect";
-import {PaymentForm} from "../PaymentForm/PaymentForm";
-import '../ComponentsStyles.css'
+import React, { useState } from "react";
+import { PaymentSelect } from "../PaymentSelect/PaymentSelect";
+import { isMobile } from "react-device-detect";
+import { PaymentForm } from "../PaymentForm/PaymentForm";
+import "../ComponentsStyles.css";
 
 export const InvoicePaymentBox = () => {
-    const [paymentMethod, setPaymentMethod] = useState<string>('')
+  const [paymentMethod, setPaymentMethod] = useState<string>("");
 
-    const changePaymentMethod = (paymentMethod: string) => {
-        setPaymentMethod(paymentMethod)
-    }
+  const changePaymentMethod = (paymentMethod: string) => {
+    setPaymentMethod(paymentMethod);
+  };
 
-    return(
-        <div className={isMobile ? 'data-box-mobile' : 'data-box'}>
-            <div className='form-box'>
-                <p className="field-description-text">Sposób płatności</p>
-                <PaymentSelect paymentMethod={paymentMethod} selectPayment={changePaymentMethod}/>
-                <PaymentForm buttonText='Dalej' paymentMethod={paymentMethod}/>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className={isMobile ? "data-box-mobile" : "data-box"}>
+      <div className="form-box">
+        <p className="field-description-text">Sposób płatności</p>
+        <PaymentSelect
+          paymentMethod={paymentMethod}
+          selectPayment={changePaymentMethod}
+        />
+        <PaymentForm buttonText="Dalej" paymentMethod={paymentMethod} />
+      </div>
+    </div>
+  );
+};
