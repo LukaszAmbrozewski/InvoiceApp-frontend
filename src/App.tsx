@@ -30,28 +30,28 @@ export const App = () => {
   return (
       <div className="App">
           <Routes>
-              <Route path="/client-add" element={<ClientAdd />} />
-              <Route path="/client-added" element={<ClientAdded />} />
-              <Route path="/client-patch/:clientPatchId" element={<ClientPatch />} />
-              <Route path="/clients-list" element={<ClientsList />} />
-              <Route path="/history" element={<History />} />
-              <Route path="/invoice-add" element={<InvoiceAdd />} />
-              <Route path="/invoice-add-item/:invoiceId" element={<InvoiceAddItem />} />
-              <Route path="/invoice-payment/:invoiceId" element={<InvoicePayment />} />
-              <Route path="/invoices-list" element={<InvoicesList />} />
-              <Route path="/invoice-summary" element={<InvoiceSummary />} />
+              <Route path="/client-add" element={(ctx.id === '') ? <Login /> : <ClientAdd />} />
+              <Route path="/client-added" element={(ctx.id === '') ? <Login /> : <ClientAdded />} />
+              <Route path="/client-patch/:clientPatchId" element={(ctx.id === '') ? <Login /> : <ClientPatch />} />
+              <Route path="/clients-list" element={(ctx.id === '') ? <Login /> : <ClientsList />} />
+              <Route path="/history" element={(ctx.id === '') ? <Login /> : <History />} />
+              <Route path="/invoice-add" element={(ctx.id === '') ? <Login /> : <InvoiceAdd />} />
+              <Route path="/invoice-add-item/:invoiceId" element={(ctx.id === '') ? <Login /> : <InvoiceAddItem />} />
+              <Route path="/invoice-payment/:invoiceId" element={(ctx.id === '') ? <Login /> : <InvoicePayment />} />
+              <Route path="/invoices-list" element={(ctx.id === '') ? <Login /> : <InvoicesList />} />
+              <Route path="/invoice-summary" element={(ctx.id === '') ? <Login /> : <InvoiceSummary />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/main" element={<Main />} />
+              <Route path="/main" element={(ctx.id === '') ? <Login /> : <Main />} />
               <Route path="/register" element={<Register />} />
-              <Route path="/statistics" element={<Statistics />} />
-              <Route path="/user-patch" element={<UserPatch />} />
-              <Route path="/info" element={<Info />} />
+              <Route path="/statistics" element={(ctx.id === '') ? <Login /> : <Statistics />} />
+              <Route path="/user-patch" element={(ctx.id === '') ? <Login /> : <UserPatch />} />
+              <Route path="/info" element={(ctx.id === '') ? <Login /> : <Info />} />
               <Route path="/user-added" element={<UserAdded />} />
               <Route path="/user-add-failed" element={<UserAddFailed />} />
               <Route path="/error" element={<Error />} />
-              <Route path="/user-info" element={<UserInfo />} />
-              <Route path="/invoice-added-item/:invoiceId" element={<InvoiceAddedItem />} />
-              <Route path="/invoice-summary/:invoiceId" element={<InvoiceSummary />} />
+              <Route path="/user-info" element={(ctx.id === '') ? <Login /> : <UserInfo />} />
+              <Route path="/invoice-added-item/:invoiceId" element={(ctx.id === '') ? <Login /> : <InvoiceAddedItem />} />
+              <Route path="/invoice-summary/:invoiceId" element={(ctx.id === '') ? <Login /> : <InvoiceSummary />} />
               <Route path="/" element={(ctx.id === '') ? <Login /> : <Main />} />
           </Routes>
       </div>
