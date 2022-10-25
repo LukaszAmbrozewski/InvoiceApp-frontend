@@ -1,12 +1,12 @@
-import * as React from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
-import Box from '@mui/material/Box';
-import './Loading.css'
+import * as React from "react";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
+import "./Loading.css";
 
 export const Loading = () => {
-    return (
-        <Box sx={{ display: 'flex' }} className='loading-box'>
-            <CircularProgress />
-        </Box>
-    );
-}
+  return (
+    <Box sx={{ display: "flex" }} className="loading-box">
+      <CircularProgress />
+    </Box>
+  );
+};
