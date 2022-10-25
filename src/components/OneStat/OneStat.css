@@ -1,0 +1,56 @@
+.one-stat-box{
+    height: 80px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.one-stat-date-box{
+    width: 105px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.one-stat-data-box{
+    width: calc(100% - 105px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.month-name{
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 350px) {
+    .one-stat-box{
+        font-size: 12px;
+    }
+
+    .one-stat-date-box{
+        width: 70px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .one-stat-data-box{
+        width: calc(100% - 70px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
