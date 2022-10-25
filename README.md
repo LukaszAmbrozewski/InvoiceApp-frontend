@@ -111,6 +111,10 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444561/InvoiceApp/Frontend/Mobile/info%20i%20lista%20faktur/info_o_aplikacji_3_-_mobile_qgvgtm.png" alt="Login View" width="250"/>
 </ul>
 
+<ul>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666692586/InvoiceApp/Frontend/Mobile/Statistics_-_mobile_lksra1.png" alt="Login View" width="250"/>
+</ul>
+
 ## Laptop or PC screens:
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396552/InvoiceApp/Frontend/Desktop/1_mavuaa.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1665396552/InvoiceApp/Frontend/Desktop/2_xvtp3w.png" alt="Login View" width="900"/>
@@ -140,10 +144,8 @@ Start the server
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/Lista_faktur_-_desktop_aaf4x2.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/info_a_aplikacji_1_-_desktop_s8vxrh.png" alt="Login View" width="900"/>
 <img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666444461/InvoiceApp/Frontend/Desktop/info%20i%20lista%20faktur/info_a_aplikacji_2_-_desktop_drclw2.png" alt="Login View" width="900"/>
+<img src="https://res.cloudinary.com/dtazubrr1/image/upload/v1666692634/InvoiceApp/Frontend/Desktop/Statistics_-_desktop_kvus5n.png" alt="Login View" width="900"/>
 
-
-## Features in develop:
-* statistics view,
 
 ## Contact
 
