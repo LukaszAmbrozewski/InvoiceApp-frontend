@@ -23,7 +23,7 @@ This project is frontend for my fullstack application. To build frontend I use T
 - Tracking activity history,
 
 
-## Run project locally - BACKEND
+## Run project locally - Frontend
 
 Clone the project
 
