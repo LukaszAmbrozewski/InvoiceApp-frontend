@@ -34,7 +34,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd nestapp
+  cd InvoiceApp-frontend
 ```
 
 Install dependencies
